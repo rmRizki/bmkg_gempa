@@ -3,6 +3,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:bmkg_gempa/src/models/gempa.dart';
 
+/// Data kejadian gempabumi yang terjadi di seluruh wilayah Indonesia.
+/// Terdapat 3 jenis data kejadian gempabumi, yaitu :
+/// Gempabumi M 5.0+, Gempabumi Dirasakan, dan Gempabumi Terbaru
 class BmkgGempa {
   final String _baseUrl = 'data.bmkg.go.id';
   final String _path = '/DataMKG/TEWS/';
