@@ -5,13 +5,8 @@ import 'package:bmkg_gempa/src/models/gempa.dart';
 
 class BmkgGempa {
   final String _baseUrl = 'data.bmkg.go.id/DataMKG/TEWS/';
-  late final http.Client httpClient;
 
-  BmkgGempa() {
-    httpClient = http.Client();
-  }
-
-  Future<dynamic> _getRequest(http.Client client, String url, {Map<String, String>? query}) async {
+  Future<dynamic> _getRequest(String url, {Map<String, String>? query}) async {
     var uri = Uri.https(_baseUrl, url, query);
     var response = await http.get(uri);
     if (response.statusCode == 200) {
@@ -28,7 +23,7 @@ class BmkgGempa {
   /// Throws [Exception] jika terjadi error
   Future<Gempa> gempaTerbaru() async {
     var url = 'autogempa.json';
-    var response = await _getRequest(httpClient, url);
+    var response = await _getRequest(url);
     return Gempa.fromJson(jsonDecode(response['Infogempa']['gempa']));
   }
 
@@ -38,7 +33,7 @@ class BmkgGempa {
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaTerkini() async {
     var url = 'gempaterkini.json';
-    var response = await _getRequest(httpClient, url);
+    var response = await _getRequest(url);
 
     var gempaList = <Gempa>[];
     List json = jsonDecode(response['Infogempa']['gempa']);
@@ -55,7 +50,7 @@ class BmkgGempa {
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaDirasakan() async {
     var url = 'gempadirasakan.json';
-    var response = await _getRequest(httpClient, url);
+    var response = await _getRequest(url);
 
     var gempaList = <Gempa>[];
     List json = jsonDecode(response['Infogempa']['gempa']);
