@@ -33,6 +33,7 @@ class BmkgGempa {
   /// - Potensi
   /// - Dirasakan
   /// - Shakemap
+  /// 
   /// Throws [Exception] jika terjadi error
   Future<Gempa> gempaTerbaru() async {
     var url = '${_path}autogempa.json';
@@ -43,7 +44,7 @@ class BmkgGempa {
 
   /// Mendapatkan daftar 15 data gempabumi M 5.0+
   ///
-  /// Mengembalikan object [List<Gempa>] jika pemanggilan sukses
+  /// Mengembalikan object List [Gempa] jika pemanggilan sukses
   /// Nilai properti yang tersedia pada method ini berupa :
   /// - Tanggal
   /// - Jam
@@ -55,6 +56,7 @@ class BmkgGempa {
   /// - Kedalaman
   /// - Wilayah
   /// - Potensi
+  /// 
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaTerkini() async {
     var url = '${_path}gempaterkini.json';
@@ -71,7 +73,7 @@ class BmkgGempa {
 
   /// Mendapatkan daftar 15 data gempabumi yang dirasakan
   ///
-  /// Mengembalikan object [List<Gempa>] jika pemanggilan sukses
+  /// Mengembalikan object List [Gempa] jika pemanggilan sukses.
   /// Nilai properti yang tersedia pada method ini berupa :
   /// - Tanggal
   /// - Jam
@@ -82,7 +84,8 @@ class BmkgGempa {
   /// - Magnitude
   /// - Kedalaman
   /// - Wilayah
-  /// - Dirasakan
+  /// - Dirasakan  
+  /// 
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaDirasakan() async {
     var url = '${_path}gempadirasakan.json';
