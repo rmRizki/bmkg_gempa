@@ -1,4 +1,6 @@
 class Gempa {
+  static String _baseUrl = 'https://data.bmkg.go.id/DataMKG/TEWS/';
+
   final String? tanggal;
   final String? jam;
   final DateTime? dateTime;
@@ -39,6 +41,6 @@ class Gempa {
         wilayah: json['Wilayah'] as String?,
         potensi: json['Potensi'] as String?,
         dirasakan: json['Dirasakan'] as String?,
-        shakemap: json['Shakemap'] as String?,
+        shakemap: '$_baseUrl${(json['Shakemap'] as String?)}',
       );
 }
