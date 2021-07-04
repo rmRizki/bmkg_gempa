@@ -1,7 +1,4 @@
 library bmkg_gempa;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/bmkg_gempa.dart';
+export 'src/models/gempa.dart';
