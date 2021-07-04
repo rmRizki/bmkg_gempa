@@ -32,7 +32,9 @@ class Gempa {
   factory Gempa.fromJson(Map<String, dynamic> json) => Gempa(
         tanggal: json['Tanggal'] as String?,
         jam: json['Jam'] as String?,
-        dateTime: json['DateTime'] == null ? null : DateTime.parse(json['DateTime'] as String),
+        dateTime: json['DateTime'] == null
+            ? null
+            : DateTime.parse(json['DateTime'] as String),
         coordinates: json['Coordinates'] as String?,
         lintang: json['Lintang'] as String?,
         bujur: json['Bujur'] as String?,
@@ -41,6 +43,8 @@ class Gempa {
         wilayah: json['Wilayah'] as String?,
         potensi: json['Potensi'] as String?,
         dirasakan: json['Dirasakan'] as String?,
-        shakemap: json['Shakemap'] == null ? null : '$_baseUrl${(json['Shakemap'] as String?)}',
+        shakemap: json['Shakemap'] == null
+            ? null
+            : '$_baseUrl${(json['Shakemap'] as String?)}',
       );
 }

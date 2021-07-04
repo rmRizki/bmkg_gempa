@@ -33,7 +33,7 @@ class BmkgGempa {
   /// - Potensi
   /// - Dirasakan
   /// - Shakemap
-  /// 
+  ///
   /// Throws [Exception] jika terjadi error
   Future<Gempa> gempaTerbaru() async {
     var url = '${_path}autogempa.json';
@@ -56,7 +56,7 @@ class BmkgGempa {
   /// - Kedalaman
   /// - Wilayah
   /// - Potensi
-  /// 
+  ///
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaTerkini() async {
     var url = '${_path}gempaterkini.json';
@@ -84,8 +84,8 @@ class BmkgGempa {
   /// - Magnitude
   /// - Kedalaman
   /// - Wilayah
-  /// - Dirasakan  
-  /// 
+  /// - Dirasakan
+  ///
   /// Throws [Exception] jika terjadi error
   Future<List<Gempa>> gempaDirasakan() async {
     var url = '${_path}gempadirasakan.json';
