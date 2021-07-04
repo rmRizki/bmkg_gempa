@@ -41,6 +41,6 @@ class Gempa {
         wilayah: json['Wilayah'] as String?,
         potensi: json['Potensi'] as String?,
         dirasakan: json['Dirasakan'] as String?,
-        shakemap: '$_baseUrl${(json['Shakemap'] as String?)}',
+        shakemap: json['Shakemap'] == null ? null : '$_baseUrl${(json['Shakemap'] as String?)}',
       );
 }
