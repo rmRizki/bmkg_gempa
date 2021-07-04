@@ -1,5 +1,5 @@
 class Gempa {
-  static String _baseUrl = 'https://data.bmkg.go.id/DataMKG/TEWS/';
+  static final String _baseUrl = 'https://data.bmkg.go.id/DataMKG/TEWS/';
 
   final String? tanggal;
   final String? jam;
