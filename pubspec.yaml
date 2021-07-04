@@ -1,6 +1,6 @@
 name: bmkg_gempa
 description: Dart client library untuk mendapat data gempabumi dari situs data terbuka BMKG.
-version: 1.0.0+1
+version: 1.0.1
 repository: https://github.com/rmRizki/bmkg_gempa
 
 environment:

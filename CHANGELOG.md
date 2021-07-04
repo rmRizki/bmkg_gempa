@@ -1,3 +1,7 @@
+## 1.0.1
+
+* Add API Testing
+
 ## 1.0.0+1
 
 * Update API doc and code formatting
