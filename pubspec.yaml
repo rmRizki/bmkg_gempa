@@ -10,10 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   http: ^0.13.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  pedantic: ^1.11.1
+  lints: ^1.0.1
+  
