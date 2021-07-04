@@ -1,3 +1,7 @@
+## 1.0.2
+
+* Remove flutter dependencies
+
 ## 1.0.1
 
 * Add API Testing

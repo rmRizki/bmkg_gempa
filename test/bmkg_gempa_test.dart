@@ -1,5 +1,5 @@
 import 'package:bmkg_gempa/bmkg_gempa.dart';
-import 'package:flutter_test/flutter_test.dart';
+import 'package:test/test.dart';
 
 void main() {
   late BmkgGempa client;
