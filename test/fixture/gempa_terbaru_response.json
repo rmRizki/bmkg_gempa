@@ -1,0 +1,18 @@
+{
+    "Infogempa": {
+        "gempa": {
+            "Tanggal": "03 Jul 2021",
+            "Jam": "20:09:45 WIB",
+            "DateTime": "2021-07-03T13:09:45+00:00",
+            "Coordinates": "-4.36,102.34",
+            "Lintang": "4.36 LS",
+            "Bujur": "102.34 BT",
+            "Magnitude": "5.5",
+            "Kedalaman": "26 km",
+            "Wilayah": "Pusat gempa berada di laut 41 km barat daya Seluma",
+            "Potensi": "Gempa ini dirasakan untuk diteruskan pada masyarakat",
+            "Dirasakan": "II Liwa, IV Manna, III Bengkulu Tengah, III Kota Bengkulu, III Argamakmur, III Kepahiang, III Curup, II Enggano, II Mukomuko",
+            "Shakemap": "20210703200945.mmi.jpg"
+        }
+    }
+}
